@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|c:\\users\\scott\\source\\repos\\database-final-project\\senior_project_db - copy\\senior_project_db\\ordersmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\ordersmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\salesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\salesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\deliverymanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\deliverymanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\inventorystatusmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\inventorystatusmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\OrdersManagement.aspx",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx",
+              "RelativeToolTip": "Senior_Project_DB\\OrdersManagement.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-18T13:09:33.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalesManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\SalesManagement.aspx",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\SalesManagement.aspx",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\SalesManagement.aspx",
+              "RelativeToolTip": "Senior_Project_DB\\SalesManagement.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-18T13:03:03.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeliveryManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\DeliveryManagement.aspx",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\DeliveryManagement.aspx",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\DeliveryManagement.aspx",
+              "RelativeToolTip": "Senior_Project_DB\\DeliveryManagement.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-18T13:08:54.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryStatusManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "RelativeToolTip": "Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-18T12:27:27.876Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
