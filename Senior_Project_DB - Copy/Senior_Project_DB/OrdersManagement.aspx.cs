@@ -13,5 +13,10 @@ namespace Senior_Project_DB
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
