@@ -71,15 +71,15 @@ div {text-align: center;}
             <p>Manage your sales here: </p>
         </div>
         <p></p>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Sales_Id,Orders_Id,Item_Id" DataSourceID="SqlDataSource2" HorizontalAlign="Center">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Orders_Id" DataSourceID="SqlDataSource2" HorizontalAlign="Center">
             <Columns>
-                <asp:BoundField DataField="Sales_Id" HeaderText="Sales_Id" ReadOnly="True" SortExpression="Sales_Id" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+                <asp:BoundField DataField="Customer_First_Name" HeaderText="Customer_First_Name" SortExpression="Customer_First_Name" />
                 
-    <asp:BoundField DataField="Orders_Id" HeaderText="Orders_Id" ReadOnly="True" SortExpression="Orders_Id" />
-    <asp:BoundField DataField="Item_Quantity" HeaderText="Item_Quantity" SortExpression="Item_Quantity"></asp:BoundField>
-    <asp:BoundField DataField="Item_Id" HeaderText="Item_Id" ReadOnly="True" SortExpression="Item_Id" />
-    <asp:BoundField DataField="Item_Name" HeaderText="Item_Name" SortExpression="Item_Name"></asp:BoundField>
-    <asp:BoundField DataField="Item_Price" HeaderText="Item_Price" SortExpression="Item_Price"></asp:BoundField>
+    <asp:BoundField DataField="Customer_Last_Name" HeaderText="Customer_Last_Name" SortExpression="Customer_Last_Name" />
+                <asp:BoundField DataField="Item_Quantity" HeaderText="Item_Quantity" SortExpression="Item_Quantity" />
+                <asp:BoundField DataField="Orders_Id" HeaderText="Orders_Id" ReadOnly="True" SortExpression="Orders_Id" />
+    <asp:BoundField DataField="Item_Id" HeaderText="Item_Id" SortExpression="Item_Id"></asp:BoundField>
 </Columns>
             <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
             <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
@@ -91,7 +91,33 @@ div {text-align: center;}
             <SortedDescendingCellStyle BackColor="#F6F0C0" />
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
-    <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Sales.Sales_Id, Orders.Orders_Id, Orders.Item_Quantity, Inventory.Item_Id, Inventory.Item_Name, Inventory.Item_Price FROM Sales INNER JOIN Orders ON Sales.Order_Id = Orders.Orders_Id INNER JOIN Inventory ON Sales.Item_Id = Inventory.Item_Id"></asp:SqlDataSource>
+    <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Customer_First_Name], [Customer_Last_Name], [Item_Quantity], [Orders_Id], [Item_Id] FROM [Orders]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Orders] WHERE [Orders_Id] = @original_Orders_Id AND [Customer_First_Name] = @original_Customer_First_Name AND [Customer_Last_Name] = @original_Customer_Last_Name AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL)) AND [Item_Id] = @original_Item_Id" InsertCommand="INSERT INTO [Orders] ([Customer_First_Name], [Customer_Last_Name], [Item_Quantity], [Orders_Id], [Item_Id]) VALUES (@Customer_First_Name, @Customer_Last_Name, @Item_Quantity, @Orders_Id, @Item_Id)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [Orders] SET [Customer_First_Name] = @Customer_First_Name, [Customer_Last_Name] = @Customer_Last_Name, [Item_Quantity] = @Item_Quantity, [Item_Id] = @Item_Id WHERE [Orders_Id] = @original_Orders_Id AND [Customer_First_Name] = @original_Customer_First_Name AND [Customer_Last_Name] = @original_Customer_Last_Name AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL)) AND [Item_Id] = @original_Item_Id">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Orders_Id" Type="Int32" />
+            <asp:Parameter Name="original_Customer_First_Name" Type="String" />
+            <asp:Parameter Name="original_Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="original_Item_Quantity" Type="Int32" />
+            <asp:Parameter Name="original_Item_Id" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Customer_First_Name" Type="String" />
+            <asp:Parameter Name="Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="Item_Quantity" Type="Int32" />
+            <asp:Parameter Name="Orders_Id" Type="Int32" />
+            <asp:Parameter Name="Item_Id" Type="Int32" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Customer_First_Name" Type="String" />
+            <asp:Parameter Name="Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="Item_Quantity" Type="Int32" />
+            <asp:Parameter Name="Item_Id" Type="Int32" />
+            <asp:Parameter Name="original_Orders_Id" Type="Int32" />
+            <asp:Parameter Name="original_Customer_First_Name" Type="String" />
+            <asp:Parameter Name="original_Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="original_Item_Quantity" Type="Int32" />
+            <asp:Parameter Name="original_Item_Id" Type="Int32" />
+        </UpdateParameters>
+        </asp:SqlDataSource>
         
         <p>
     <%--<button class="button button1">Delivery</button>--%>

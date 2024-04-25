@@ -93,6 +93,8 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\OrderDB.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="OrdersManagement.aspx.cs">
       <DependentUpon>OrdersManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

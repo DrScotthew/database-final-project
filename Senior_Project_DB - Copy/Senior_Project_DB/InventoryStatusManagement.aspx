@@ -89,7 +89,7 @@ div {text-align: center;}
             <SortedDescendingCellStyle BackColor="#F6F0C0" />
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Inventory] WHERE [Item_Id] = @original_Item_Id AND (([Item_Name] = @original_Item_Name) OR ([Item_Name] IS NULL AND @original_Item_Name IS NULL)) AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL)) AND (([Item_Price] = @original_Item_Price) OR ([Item_Price] IS NULL AND @original_Item_Price IS NULL)) AND (([Item_Location] = @original_Item_Location) OR ([Item_Location] IS NULL AND @original_Item_Location IS NULL))" InsertCommand="INSERT INTO [Inventory] ([Item_Id], [Item_Name], [Item_Quantity], [Item_Price], [Item_Location]) VALUES (@Item_Id, @Item_Name, @Item_Quantity, @Item_Price, @Item_Location)" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT [Item_Id], [Item_Name], [Item_Quantity], [Item_Price], [Item_Location] FROM [Inventory]" UpdateCommand="UPDATE [Inventory] SET [Item_Name] = @Item_Name, [Item_Quantity] = @Item_Quantity, [Item_Price] = @Item_Price, [Item_Location] = @Item_Location WHERE [Item_Id] = @original_Item_Id AND (([Item_Name] = @original_Item_Name) OR ([Item_Name] IS NULL AND @original_Item_Name IS NULL)) AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL)) AND (([Item_Price] = @original_Item_Price) OR ([Item_Price] IS NULL AND @original_Item_Price IS NULL)) AND (([Item_Location] = @original_Item_Location) OR ([Item_Location] IS NULL AND @original_Item_Location IS NULL))">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Inventory] WHERE [Item_Id] = @original_Item_Id AND (([Item_Name] = @original_Item_Name) OR ([Item_Name] IS NULL AND @original_Item_Name IS NULL)) AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL)) AND (([Item_Price] = @original_Item_Price) OR ([Item_Price] IS NULL AND @original_Item_Price IS NULL)) AND (([Item_Location] = @original_Item_Location) OR ([Item_Location] IS NULL AND @original_Item_Location IS NULL))" InsertCommand="INSERT INTO [Inventory] ([Item_Id], [Item_Name], [Item_Quantity], [Item_Price], [Item_Location]) VALUES (@Item_Id, @Item_Name, @Item_Quantity, @Item_Price, @Item_Location)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Inventory]" UpdateCommand="UPDATE [Inventory] SET [Item_Name] = @Item_Name, [Item_Quantity] = @Item_Quantity, [Item_Price] = @Item_Price, [Item_Location] = @Item_Location WHERE [Item_Id] = @original_Item_Id AND (([Item_Name] = @original_Item_Name) OR ([Item_Name] IS NULL AND @original_Item_Name IS NULL)) AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL)) AND (([Item_Price] = @original_Item_Price) OR ([Item_Price] IS NULL AND @original_Item_Price IS NULL)) AND (([Item_Location] = @original_Item_Location) OR ([Item_Location] IS NULL AND @original_Item_Location IS NULL))">
             <DeleteParameters>
                 <asp:Parameter Name="original_Item_Id" Type="Int32" />
                 <asp:Parameter Name="original_Item_Name" Type="String" />
@@ -133,6 +133,12 @@ div {text-align: center;}
     &nbsp;</p>
 <p>
     &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

@@ -73,13 +73,11 @@ div {text-align: center;}
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource2" DataKeyNames="Orders_Id" HorizontalAlign="Center">
     <Columns>
         <asp:BoundField DataField="Orders_Id" HeaderText="Orders_Id" ReadOnly="True" SortExpression="Orders_Id"></asp:BoundField>
+        <asp:BoundField DataField="Item_Id" HeaderText="Item_Id" SortExpression="Item_Id"></asp:BoundField>
         <asp:BoundField DataField="Customer_First_Name" HeaderText="Customer_First_Name" SortExpression="Customer_First_Name"></asp:BoundField>
         <asp:BoundField DataField="Customer_Last_Name" HeaderText="Customer_Last_Name" SortExpression="Customer_Last_Name"></asp:BoundField>
         <asp:BoundField DataField="Address (Street, City, State, Zip)" HeaderText="Address (Street, City, State, Zip)" SortExpression="Address (Street, City, State, Zip)"></asp:BoundField>
         <asp:BoundField DataField="Item_Quantity" HeaderText="Item_Quantity" SortExpression="Item_Quantity"></asp:BoundField>
-        <asp:BoundField DataField="Item_Id" HeaderText="Item_Id" SortExpression="Item_Id"></asp:BoundField>
-        <asp:BoundField DataField="Item_Name" HeaderText="Item_Name" SortExpression="Item_Name"></asp:BoundField>
-        <asp:BoundField DataField="Item_Price" HeaderText="Item_Price" SortExpression="Item_Price"></asp:BoundField>
     </Columns>
     <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
             <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
@@ -91,7 +89,37 @@ div {text-align: center;}
             <SortedDescendingCellStyle BackColor="#F6F0C0" />
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
-    <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Orders.Orders_Id, Orders.Customer_First_Name, Orders.Customer_Last_Name, Orders.[Address (Street, City, State, Zip)], Orders.Item_Quantity, Orders.Item_Id, Inventory.Item_Name, Inventory.Item_Price FROM Orders INNER JOIN Inventory ON Orders.Item_Id = Inventory.Item_Id" UpdateCommand="UPDATE Inventory SET Item_Quantity = Inventory.Item_Quantity - Orders.Item_Quantity FROM Inventory INNER JOIN Orders ON Inventory.Item_Id = Orders.Item_Id"></asp:SqlDataSource>
+    <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Orders]" UpdateCommand="UPDATE [Orders] SET [Item_Id] = @Item_Id, [Customer_First_Name] = @Customer_First_Name, [Customer_Last_Name] = @Customer_Last_Name, [Address (Street, City, State, Zip)] = @column1, [Item_Quantity] = @Item_Quantity WHERE [Orders_Id] = @original_Orders_Id AND [Item_Id] = @original_Item_Id AND [Customer_First_Name] = @original_Customer_First_Name AND [Customer_Last_Name] = @original_Customer_Last_Name AND [Address (Street, City, State, Zip)] = @original_column1 AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL))" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Orders] WHERE [Orders_Id] = @original_Orders_Id AND [Item_Id] = @original_Item_Id AND [Customer_First_Name] = @original_Customer_First_Name AND [Customer_Last_Name] = @original_Customer_Last_Name AND [Address (Street, City, State, Zip)] = @original_column1 AND (([Item_Quantity] = @original_Item_Quantity) OR ([Item_Quantity] IS NULL AND @original_Item_Quantity IS NULL))" InsertCommand="INSERT INTO [Orders] ([Orders_Id], [Item_Id], [Customer_First_Name], [Customer_Last_Name], [Address (Street, City, State, Zip)], [Item_Quantity]) VALUES (@Orders_Id, @Item_Id, @Customer_First_Name, @Customer_Last_Name, @column1, @Item_Quantity)" OldValuesParameterFormatString="original_{0}">
+        <DeleteParameters>
+            <asp:Parameter Name="original_Orders_Id" Type="Int32" />
+            <asp:Parameter Name="original_Item_Id" Type="Int32" />
+            <asp:Parameter Name="original_Customer_First_Name" Type="String" />
+            <asp:Parameter Name="original_Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="original_column1" Type="String" />
+            <asp:Parameter Name="original_Item_Quantity" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Orders_Id" Type="Int32" />
+            <asp:Parameter Name="Item_Id" Type="Int32" />
+            <asp:Parameter Name="Customer_First_Name" Type="String" />
+            <asp:Parameter Name="Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="column1" Type="String" />
+            <asp:Parameter Name="Item_Quantity" Type="Int32" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Item_Id" Type="Int32" />
+            <asp:Parameter Name="Customer_First_Name" Type="String" />
+            <asp:Parameter Name="Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="column1" Type="String" />
+            <asp:Parameter Name="Item_Quantity" Type="Int32" />
+            <asp:Parameter Name="original_Orders_Id" Type="Int32" />
+            <asp:Parameter Name="original_Item_Id" Type="Int32" />
+            <asp:Parameter Name="original_Customer_First_Name" Type="String" />
+            <asp:Parameter Name="original_Customer_Last_Name" Type="String" />
+            <asp:Parameter Name="original_column1" Type="String" />
+            <asp:Parameter Name="original_Item_Quantity" Type="Int32" />
+        </UpdateParameters>
+        </asp:SqlDataSource>
         
         <p>
     <%--<button class="button button1">Delivery</button>--%>
@@ -105,17 +133,21 @@ div {text-align: center;}
     <asp:Button ID="Button4" class ="button button4" runat="server" Height="100px" PostBackUrl="~/SalesManagement.aspx" Text="Sales" Width="200px" />
 </p>
 <p>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <asp:Button ID="Button5" runat="server" Text="Button" />
-</p>
+    &nbsp;</p>
 <p>
-    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-</p>
+    &nbsp;</p>
 <p>
-    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-</p>
+    &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

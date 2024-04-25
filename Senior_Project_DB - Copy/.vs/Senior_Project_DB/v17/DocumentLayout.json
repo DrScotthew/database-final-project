@@ -3,23 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_SCOTT_SOURCE_REPOS_DATABASE_FINAL_PROJECT_SENIOR_PROJECT_DB___COPY_SENIOR_PROJECT_DB_APP_DATA_WAREHOUSEDB.MDF/True/SqlTable/dbo.Sales.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|c:\\users\\scott\\source\\repos\\database-final-project\\senior_project_db - copy\\senior_project_db\\ordersmanagement.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\ordersmanagement.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\salesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\ordersmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\ordersmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|c:\\users\\scott\\source\\repos\\database-final-project\\senior_project_db - copy\\senior_project_db\\inventorystatusmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\inventorystatusmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|c:\\users\\scott\\source\\repos\\database-final-project\\senior_project_db - copy\\senior_project_db\\salesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\salesmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|c:\\users\\scott\\source\\repos\\database-final-project\\senior_project_db - copy\\senior_project_db\\ordersmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\ordersmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|c:\\users\\scott\\source\\repos\\database-final-project\\senior_project_db - copy\\senior_project_db\\ordersmanagement.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\ordersmanagement.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\deliverymanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\deliverymanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\senior_project_db\\inventorystatusmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{23AC8E3B-3493-4789-B624-F92C65DDB6D7}|Senior_Project_DB\\Senior_Project_DB.csproj|solutionrelative:senior_project_db\\inventorystatusmanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,29 +43,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dbo.Sales [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_SCOTT_SOURCE_REPOS_DATABASE_FINAL_PROJECT_SENIOR_PROJECT_DB___COPY_SENIOR_PROJECT_DB_APP_DATA_WAREHOUSEDB.MDF/True/SqlTable/dbo.Sales.sql",
-              "ToolTip": "dbo.Sales [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-24T04:15:39.634Z",
+              "Title": "OrdersManagement.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx.cs",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\OrdersManagement.aspx.cs",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx.cs",
+              "RelativeToolTip": "Senior_Project_DB\\OrdersManagement.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwCEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T15:04:18.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersManagement.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\OrdersManagement.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx.designer.cs",
+              "RelativeToolTip": "Senior_Project_DB\\OrdersManagement.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T14:59:35.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OrdersManagement.aspx",
-              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx",
-              "RelativeDocumentMoniker": "Senior_Project_DB\\OrdersManagement.aspx",
-              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx",
-              "RelativeToolTip": "Senior_Project_DB\\OrdersManagement.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Title": "InventoryStatusManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "RelativeToolTip": "Senior_Project_DB\\InventoryStatusManagement.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-18T13:09:33.616Z",
+              "WhenOpened": "2024-04-25T14:56:07.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SalesManagement.aspx",
               "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\SalesManagement.aspx",
               "RelativeDocumentMoniker": "Senior_Project_DB\\SalesManagement.aspx",
@@ -68,33 +89,33 @@
               "RelativeToolTip": "Senior_Project_DB\\SalesManagement.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-18T13:03:03.2Z",
+              "WhenOpened": "2024-04-25T14:53:22.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DeliveryManagement.aspx",
               "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\DeliveryManagement.aspx",
               "RelativeDocumentMoniker": "Senior_Project_DB\\DeliveryManagement.aspx",
               "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\DeliveryManagement.aspx",
               "RelativeToolTip": "Senior_Project_DB\\DeliveryManagement.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-18T13:08:54.918Z",
+              "WhenOpened": "2024-04-25T14:43:47.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InventoryStatusManagement.aspx",
-              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\InventoryStatusManagement.aspx",
-              "RelativeDocumentMoniker": "Senior_Project_DB\\InventoryStatusManagement.aspx",
-              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\InventoryStatusManagement.aspx",
-              "RelativeToolTip": "Senior_Project_DB\\InventoryStatusManagement.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "DocumentIndex": 1,
+              "Title": "OrdersManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx",
+              "RelativeDocumentMoniker": "Senior_Project_DB\\OrdersManagement.aspx",
+              "ToolTip": "C:\\Users\\Scott\\source\\repos\\database-final-project\\Senior_Project_DB - Copy\\Senior_Project_DB\\OrdersManagement.aspx",
+              "RelativeToolTip": "Senior_Project_DB\\OrdersManagement.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-18T12:27:27.876Z",
+              "WhenOpened": "2024-04-18T13:09:33.616Z",
               "EditorCaption": ""
             }
           ]
