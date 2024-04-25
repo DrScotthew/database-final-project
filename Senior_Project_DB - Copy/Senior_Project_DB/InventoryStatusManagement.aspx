@@ -131,8 +131,19 @@ div {text-align: center;}
     &nbsp;</p>
 <p>
     &nbsp;</p>
+        <p>
+            <asp:Label runat="server" Text="Item_ID" ID="ctl25"></asp:Label><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>&nbsp;</p>
 <p>
-    &nbsp;</p>
+    &nbsp;<asp:Label runat="server" Text="Item_Name" ID="ctl78"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></p>
+        <p>
+            <asp:Label runat="server" Text="Item_Quantity" ID="ctl03"></asp:Label><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>&nbsp;</p>
+        <p>
+            <asp:Label runat="server" Text="Item_Price" ID="ctl06"></asp:Label><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>&nbsp;</p>
+        <p>
+            <asp:Label runat="server" Text="Item_Location" ID="ctl09"></asp:Label><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>&nbsp;</p>
+        <p>
+            <asp:Button ID="Button5" runat="server" Text="Add" OnClick="Unnamed9_Click"></asp:Button><asp:Label runat="server" Text="Label" ID="Error" Visible="False"></asp:Label></p>
+        
     </form>
 </body>
 </html>
