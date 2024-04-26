@@ -71,14 +71,34 @@
     <Content Include="App_Data\WarehouseDB_log.ldf">
       <DependentUpon>WarehouseDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Cart.aspx" />
+    <Content Include="Images\image4.jpg" />
+    <Content Include="Images\image5.jpg" />
+    <Content Include="Images\image7.jpg" />
+    <Content Include="Images\computer.jpg" />
     <Content Include="DeliveryManagement.aspx" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\Desktop.jpg" />
+    <Content Include="Images\images.jpg" />
     <Content Include="Index.aspx" />
+    <Content Include="Images\monitor.jpg" />
+    <Content Include="JavaScript.js" />
+    <Content Include="Images\mouse.jpg" />
+    <Content Include="Images\mousepad.jpg" />
+    <Content Include="OrderItem.aspx" />
     <Content Include="OrdersManagement.aspx" />
     <Content Include="SalesManagement.aspx" />
     <Content Include="Web.config" />
     <Content Include="InventoryStatusManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DeliveryManagement.aspx.cs">
       <DependentUpon>DeliveryManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,6 +112,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.aspx.cs">
+      <DependentUpon>OrderItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderItem.aspx.designer.cs">
+      <DependentUpon>OrderItem.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrdersManagement.aspx.cs">
       <DependentUpon>OrdersManagement.aspx</DependentUpon>

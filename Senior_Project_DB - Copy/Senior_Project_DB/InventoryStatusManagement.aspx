@@ -64,11 +64,31 @@ div {text-align: center;}
 .button4:hover {background-color: mediumorchid;}
 </style>
 </head>
-<body style="background-color:#008CBA;">
+<body style="background-color:white;">
     <form id="form1" runat="server">
         <div>
-            <h1>Inventory Status Management</h1>
-            <p>Manage your inventory here: </p>
+                        <h1>Inventory<asp:Button ID="Button1"
+    class="button button1"
+    runat="server"  
+    PostBackUrl="~/DeliveryManagement.aspx" 
+    Text="Delivery"
+    Height="50px"
+    Width="300px"/>
+<asp:Button ID="Button2" class="button button2" runat="server" Height="50px" PostBackUrl="~/InventoryStatusManagement.aspx" Text="Inventory" Width="300px" />
+<asp:Button ID="Button3" class ="button button3" runat="server" Height="50px" PostBackUrl="~/OrdersManagement.aspx" Text="Orders" Width="300px" />
+<asp:Button ID="Button4" class ="button button4" runat="server" Height="50px" PostBackUrl="~/SalesManagement.aspx" Text="Sales" Width="300px" />
+</h1>
+        <p>
+    <%--<button class="button button1">Delivery</button>--%>
+    <%--<asp:Button ID="Button1"
+        class="button button1"
+        runat="server"  
+        PostBackUrl="~/DeliveryManagement.aspx" 
+        Text="Delivery"/>
+    <asp:Button ID="Button2" class="button button2" runat="server" Height="100px" PostBackUrl="~/InventoryStatusManagement.aspx" Text="Inventory" Width="200px" />
+    <asp:Button ID="Button3" class ="button button3" runat="server" Height="100px" PostBackUrl="~/OrdersManagement.aspx" Text="Orders" Width="200px" />
+    <asp:Button ID="Button4" class ="button button4" runat="server" Height="100px" PostBackUrl="~/SalesManagement.aspx" Text="Sales" Width="200px" />--%>
+            The following table shows all items currently in your inventory:</p>
         </div>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="Item_Id" DataSourceID="SqlDataSource1" HorizontalAlign="Center">
             <Columns>
@@ -116,21 +136,10 @@ div {text-align: center;}
                 <asp:Parameter Name="original_Item_Location" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <p>
-    <%--<button class="button button1">Delivery</button>--%>
-    <asp:Button ID="Button1"
-        class="button button1"
-        runat="server"  
-        PostBackUrl="~/DeliveryManagement.aspx" 
-        Text="Delivery"/>
-    <asp:Button ID="Button2" class="button button2" runat="server" Height="100px" PostBackUrl="~/InventoryStatusManagement.aspx" Text="Inventory" Width="200px" />
-    <asp:Button ID="Button3" class ="button button3" runat="server" Height="100px" PostBackUrl="~/OrdersManagement.aspx" Text="Orders" Width="200px" />
-    <asp:Button ID="Button4" class ="button button4" runat="server" Height="100px" PostBackUrl="~/SalesManagement.aspx" Text="Sales" Width="200px" />
-</p>
 <p>
-    &nbsp;</p>
+    Want to add a new item to your inventory database?&nbsp; Enter the information in the fields below and click &#39;Add&#39;.</p>
 <p>
-    &nbsp;</p>
+    &nbsp;Information will automatically be updated across your database!</p>
         <p>
             <asp:Label runat="server" Text="Item_ID" ID="ctl25"></asp:Label><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>&nbsp;</p>
 <p>
